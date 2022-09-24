@@ -1,0 +1,39 @@
+.container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.iconImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(153, 149, 149);
+}
+
+.chatTitle {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.titleText {
+    --move-left: 0px;
+    display: inline-block;
+    transform: translateX(var(--move-left));
+    transition: .75s transform linear;
+}
+
+.selected {
+    background-color: var(--accent-color);
+}
+
+.selected .chatTitle {
+    color: white;
+}

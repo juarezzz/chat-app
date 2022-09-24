@@ -1,0 +1,54 @@
+.messageForm {
+    flex-basis: 55px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.messageInput {
+    flex: 0.6;
+    resize: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    padding: 10px 15px;
+    overflow: hidden;
+    max-height: 120px;
+    border-radius: 5px;
+}
+
+.barButton {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.imageInputLabel {
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.notification {
+    position: absolute;
+    background-color: crimson;
+    color: white;
+    z-index: 100;
+    bottom: 80px;
+    padding: 5px 15px;
+    border-radius: 50vw;
+    visibility: hidden;
+    opacity: 0;
+    animation: FadeOut 3s ease-in;
+}
+
+@keyframes FadeOut {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+}

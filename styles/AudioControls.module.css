@@ -1,0 +1,58 @@
+.audioControls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    width: 50%;
+}
+
+.iconButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.time {
+    justify-self: start;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.duration {
+    justify-self: end;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.speedRate {
+    justify-self: end;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.slider {
+    width: 100%;
+    grid-column: 1 / -1;
+    appearance: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50vw;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: -4px;
+    margin-left: -1px;
+}

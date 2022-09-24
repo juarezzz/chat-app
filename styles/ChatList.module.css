@@ -1,0 +1,7 @@
+.container {
+    background-color: var(--primary-color);
+    height: 100%;
+    border-left: 2px solid black;
+    overflow-y: auto;
+    width: 100%;
+}

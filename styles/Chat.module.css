@@ -1,0 +1,12 @@
+.chatBox {
+    height: calc(100% - var(--navbar-height));
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFCF1;
+}
+
+.messagesContainer {
+    padding: 10px 20px;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
